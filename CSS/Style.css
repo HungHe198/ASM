@@ -1,7 +1,4 @@
-*
-{
-    border: #FFFFFF 1px solid;
-}
+
 body{
     padding: 0;
     margin: 0;
@@ -14,15 +11,24 @@ header{
     align-items: center;
     align-content: center;
     text-align:center ;
+    height: 30px;
+
     /* display: inline-block; */
 }
 .nav-top-right{
     list-style: none;
     list-style-type: none;
+    align-items: center;
+    align-content: center;
+    text-align:center ;
+    float: right;
+    gap: 10px;
+   
 }
+
 .nav-top-right>a{
     text-decoration: none;
-   
+    color: #FFFFFF;
 }
 .nav-top-right>span{
 color: white;

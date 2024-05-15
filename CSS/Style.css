@@ -4,7 +4,7 @@ body{
     margin: 0;
 }
 header{
-    background-color: #fa5130;
+    background-color: #ff5521;
 }
 .nav-top{
     color: #FFFFFF;
@@ -38,4 +38,31 @@ color: white;
 }
 .nav-top-left>span{
 color: white;
+}
+.SeachBox{
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+    border-radius: 10px;
+}
+#sb1{
+    width: 950px;
+    height: 50px;
+    border-radius: 19px;
+    border: #FFFFFF;
+    padding: 10px 10px 10px 30px ;
+}
+#sb2{
+    height: 36px;
+    border-radius: 19px;
+    border: #FFFFFF;
+    margin: 20px 10px 20px 10px ;
+    background-color: #ff5521;
+}
+.Cart{
+    align-items: center;
+    
 }

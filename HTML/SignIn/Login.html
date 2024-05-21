@@ -17,18 +17,17 @@
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
-    
     /* @media (min-width: 768px) {
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
       }
     } */
 
-    
 
-   
 
-    
+
+
+
 
     .btn-bd-primary {
       --bd-violet-bg: #712cf9;
@@ -58,12 +57,12 @@
 
 
   <!-- Custom styles for this template -->
-  <link href="modals.css" rel="stylesheet">
+  <link href="../../CSS/modals.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <svg xmlns="http://www.w3.org/2000/svg" class="d-none"> 
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <!-- Chọn chế độ sáng tối cho trang web -->
     <symbol id="check2" viewBox="0 0 16 16">
       <path
@@ -155,44 +154,49 @@
   </svg>
 
   <form action="">
-    
-  <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog"
-  id="modalSignin">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content rounded-4 shadow">
-      <div class="modal-header p-5 pb-4 border-bottom-0">
-        <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
 
-      <div class="modal-body p-5 pt-0">
-        <form class="">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
+    <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog"
+      id="modalSignin">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
+
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-3" id="floatingInput" name="Username"
+                  placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-3" id="floatingPassword" name="Password"
+                  placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">
+                <a href="../Home/Home.html"> Đăng nhập </a>
+
+
+              </button>
+              <hr class="my-4">
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">
+                <a href="Logup.html">Đăng kí</a>
+                <!-- Trả về đăng kí thành công hoặc không thành công -->
+              </button>
+            </form>
           </div>
-          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" onclick="signIn()">Sign up</button>
-          <hr class="my-4">
-          <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
-          <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
-            
-         
-          </button>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-</div>
   </form>
 
   <div class="b-example-divider"></div>
   <script src="../../JS/Login.js"></script>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-  
+
 </body>
 
 </html>

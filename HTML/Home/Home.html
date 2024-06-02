@@ -16,9 +16,10 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../../CSS/home.css">
+    
 </head>
 
-<body>
+<body ng-app = "myApp">
     <header>
         <div class="container">
             <div class="nav-top d-flex justify-content-between ">
@@ -150,7 +151,7 @@
         </div>
     </header>
     <br>
-    <div class="container">
+    <div class="container" ng-view>
         <div class="banner-container">
             <div class="item item1">
                 <div id="carouselExampleIndicators" class="carousel slide">

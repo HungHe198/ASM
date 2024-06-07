@@ -1,0 +1,36 @@
+<h1>Thêm sản phẩm
+</h1>
+<form class="container">
+    <span>Tên</span>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Text input with checkbox" ng-model="name">
+    </div>
+
+    <span>Url Image</span>
+    <div class="input-group mb-3">
+
+        <input type="text" class="form-control" aria-label="Text input with checkbox" ng-model="urlImage">
+    </div>
+    <span>Giá</span>
+    <div class="input-group mb-3">
+
+        <input type="text" class="form-control" aria-label="Text input with checkbox" ng-model="price">
+    </div>
+    <span>Số lượng</span>
+    <div class="input-group mb-3">
+
+        <input type="text" class="form-control" aria-label="Text input with checkbox" ng-model="quantity">
+    </div>
+    <span>Danh mục</span>
+    <div>
+        <!-- lấy ra từ bảng category -->
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Danh mục sản phẩm</option>
+            <option value="1">2.7</option>
+            <option value="2">3.2</option>
+            <option value="3">5.6</option>
+        </select>
+        
+    </div>
+    <input class="m-5" type="submit" value="Thêm sản phẩm" ng-click="addProduct()">
+</form>

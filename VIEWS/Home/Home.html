@@ -1,316 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        ASM-Web207-HungLVPH45911
-    </title>
-    <link rel="stylesheet" href="../../CSS/Style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../../CSS/home.css">
-    
-</head>
-
-<body ng-app = "myApp">
-    <header>
-        <div class="container">
-            <div class="nav-top d-flex justify-content-between ">
-                <div class="nav-top-left " style="text-decoration: none;">
-                    <a href="https://shopee.vn/web"> <Span style='color:#ffffff'>
-                            Tải ứng dụng
-                        </Span></a>
-                    <span>|</span>
-                    <span style="color: #ffffff;"> Kết nối</span>
-                    <a href="https://www.facebook.com/levanhung.1982004">
-                        <i class='bx bxl-facebook' style='color:#ffffff'></i>
-                    </a>
-
-
-                    <a href="https://github.com/HungHe198/ASM">
-                        <i class='bx bxl-github' style='color:#ffffff'></i>
-                    </a>
-
+<div class="container">
+    <div class="banner-container">
+        <div class="item item1">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div class="navbar-spacer"> </div>
-                <div class="nav-top-right d-flex " style="text-decoration: none;">
-                    <span>Thông báo</span>
-                    <a href="../Handy/Help.html"><i class='bx bxs-help-circle' style='color:#ffffff'></i>
-                        Hỗ trợ</a>
-                    <a href="../User/User.html"><i class='bx bxs-user-circle' style='color:#ffffff'></i>
-
-                        Tài khoản</a>
-
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <a href="../sign-in/Logup.html">Đăng kí</a>
-                    </button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <a href="../sign-in/Login.html">Đăng nhập</a>
-                    </button>
-
-                    <!-- Modal logup -->
-                    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="basic-addon1">@</span>
-                                        <input type="text" class="form-control" placeholder="Username"
-                                            aria-label="Username" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Recipient's username"
-                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                        <span class="input-group-text" id="basic-addon2">@example.com</span>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="basic-url" class="form-label">Your vanity URL</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text"
-                                                id="basic-addon3">https://example.com/users/</span>
-                                            <input type="text" class="form-control" id="basic-url"
-                                                aria-describedby="basic-addon3 basic-addon4">
-                                        </div>
-                                        <div class="form-text" id="basic-addon4">Example help text goes outside the
-                                            input group.</div>
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text">$</span>
-                                        <input type="text" class="form-control"
-                                            aria-label="Amount (to the nearest dollar)">
-                                        <span class="input-group-text">.00</span>
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Username"
-                                            aria-label="Username">
-                                        <span class="input-group-text">@</span>
-                                        <input type="text" class="form-control" placeholder="Server"
-                                            aria-label="Server">
-                                    </div>
-
-                                    <div class="input-group">
-                                        <span class="input-group-text">With textarea</span>
-                                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-
-            </div>
-            <div class="header-with-search-wrapper">
-
-
-                <div class="d-flex justify-content-between ">
-                    <div>
-                        <img src="../../Image/Logo/logo.png" alt="" width="150rem">
+                <div class="carousel-inner">
+                    <div class="carousel-item active item">
+                        <img src="../Image/Banner/1.png" class="d-block w-100" alt="...">
                     </div>
-                    <div>
-
+                    <div class="carousel-item item">
+                        <img src="../Image/Banner/2.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="d-flex SeachBox">
-                        <div>
-                            <input type="text" placeholder="Seach" id="sb1">
-                        </div>
-                        <div>
-                            <input type="button" value="Seach" id="sb2">
-                        </div>
-                    </div>
-                    <div class="d-flex Cart">
-                        <a href="../Product/Cart.html">
-                            <img
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAyZJREFUaEPtmFuITVEYx39/kgcv5PKAENHgRSEzyOXJi+uDXJ6mEIXiCSVmmgfy4pJreTBPLoUiJSVCGUqRB8q1mKbclQeX9DlL69SaPTPn7Dl7nV1T53s67b3W//ud//72+tZeog+G+iAzNei8nlrN6ZrTJRzoVB5mNg5ozMuxlHnOSXoejk1CLwBupRTLc9jkELyvQM+WdL/oUl+BHi2pvSfowcC0xHM/BUwKrq0HXlWxNqYCRwP9J5I6MZVdp81sN9ASiDRLaqoWtJntBPYF+vsl7erxRewOxMxGAe+De68lTagi9O3CYjA/0J8n6W6voN1gM3OT5gYTGyS1xQY3s0HA98KT7e+13e+hkv5WAr0ROBlMPCZpSxWglwOXA90LklYl85Stae+0e0E/AAO8wFdgeNKBrH/CzJwxzqBiNEpqrQjag18CVgQCiyVdywoazjezd8Do4NoISR+zQDtgB14M117XxII2szrgWaD3SNKM7vRTlYd32pWGKxFXKi5++hL5EQPczLYBBwOtFkl7MkF78BPApkBoL3AnBrTvBalWqNROe+g5wL1IkKVkPksa1tOAXkF7cNdoXMOpZmyQdDomtGvprrVXK+5ICjtilzyVOO1a+MuEUnOEf/ANaEvTaXsN7UvkITAzAK2X9CACeCqJSqG3AkeCDIckbU+VMcKgSqHdWv0p2Ni4tbou3KhHYOtRoiJoXyIXgJWBsms2j4FfGYCvS9pfbn4WaFfTrrZjRquksqcBFUN7tzf4LWu/SOTVh/bgU/y6PQsYnxE+H+iMkBVNz1QeYUYzGwg4tzskvShHY2b1wB9Jj8qNTd6PAm1mS4EzwBCf4LAkt9XsEmY2BrgIFPfKN4Alkn6nhY8F/RYYm0i6TNKVJIiZnQVWJ64fkLQjN2h/aPmmm4RNkrrsSczMjXUHnWHclrQwN2i/gnwJSqOYe60k52qnMLOrwOLE5eOFb8HNeUOvK3yQhvvf84VTzmQJ/GcqQE8HXNmM9JBPgUWSOnKF9jATgQagXdLNUgD+UMa57VaP8GM5FXeUFzFVpoiDatARzSwpVXM6L6f/Ae3c+i5q8RuYAAAAAElFTkSuQmCC" />
-                        </a>
+                    <div class="carousel-item item">
+                        <img src="../Image/Banner/3.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </header>
-    <br>
-    <div class="container" ng-view>
-        <div class="banner-container">
-            <div class="item item1">
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active item">
-                            <img src="../../Image/Banner/1.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item item">
-                            <img src="../../Image/Banner/2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item item">
-                            <img src="../../Image/Banner/3.png" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-            <div class="item item2">
-                <a href="../Product/ProductDetail.html"><img src="../../Image/Banner/4.jpeg" alt=""></a>
-            </div>
-            <div class="item item3">
-
-                <a href="../Product/ProductDetail.html"><img src="../../Image/Banner/5.png" alt=""></a>
-            </div>
+        <div class="item item2">
+            <a href="../Product/ProductDetail.html"><img src="../Image/Banner/4.jpeg" alt=""></a>
         </div>
-        <hr>
-        <!-- <div class="flashSale">
-            <div id="countdown" class="cd-clock">
+        <div class="item item3">
 
-            </div>
-
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">col</div>
-                    <div class="col">col</div>
-                    <div class="col">col</div>
-                    <div class="col">col</div>
-                    <div class="col">col</div>
-                    <div class="col">col</div>
-                    <div class="col">col</div>
-                </div>
-                
-            </div>
-
-        </div> -->
-        <hr>
-        <div class="container text-center">
-            <div class="row" style="padding-top: 30px;">
-                <div class="col">
-                    <div class="card" style="width: 15rem;">
-                        <img src="../../Image/Product/3.png" class="card-img-top" alt="...">
-                        <div class="card-body cardDetail">
-                            <h5 class="card-title">Handing-Shark</h5>
-                            <span class="card-text">1.200.000 - 2.300.000</span>
-                            <a href="../Product/ProductDetail.html" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 15rem;">
-                        <img src="../../Image/Product/hds.jpg" class="card-img-top" alt="...">
-                        <div class="card-body cardDetail">
-                            <h5 class="card-title">Handing-Shark</h5>
-                            <span class="card-text">1.200.000 - 2.300.000</span>
-                            <a href="../Product/ProductDetail.html" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 15rem;">
-                        <img src="../../Image/Product/3.png" class="card-img-top" alt="...">
-                        <div class="card-body cardDetail">
-                            <h5 class="card-title">Handing-Shark</h5>
-                            <span class="card-text">1.200.000 - 2.300.000</span>
-                            <a href="../Product/ProductDetail.html" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 15rem;">
-                        <img src="../../Image/Product/4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body cardDetail">
-                            <h5 class="card-title">Handing-Shark</h5>
-                            <span class="card-text">1.200.000 - 2.300.000</span>
-                            <a href="../Product/ProductDetail.html" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="padding-top: 30px;">
-                <div class="col">
-                    <div class="card" style="width: 15rem;">
-                        <img src="../../Image/Product/Handing-Shark-1.png" class="card-img-top" alt="...">
-                        <div class="card-body cardDetail">
-                            <h5 class="card-title">Handing-Shark</h5>
-                            <span class="card-text">1.200.000 - 2.300.000</span>
-                            <a href="../Product/ProductDetail.html" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 15rem;">
-                        <img src="../../Image/Product/Handing-Shark-1.png" class="card-img-top" alt="...">
-                        <div class="card-body cardDetail">
-                            <h5 class="card-title">Handing-Shark</h5>
-                            <span class="card-text">1.200.000 - 2.300.000</span>
-                            <a href="../Product/ProductDetail.html" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 15rem;">
-                        <img src="../../Image/Product/Handing-Shark-1.png" class="card-img-top" alt="...">
-                        <div class="card-body cardDetail">
-                            <h5 class="card-title">Handing-Shark</h5>
-                            <span class="card-text">1.200.000 - 2.300.000</span>
-                            <a href="../Product/ProductDetail.html" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 15rem;">
-                        <img src="../../Image/Product/Handing-Shark-1.png" class="card-img-top" alt="...">
-                        <div class="card-body cardDetail">
-                            <h5 class="card-title">Handing-Shark</h5>
-                            <span class="card-text">1.200.000 - 2.300.000</span>
-                            <a href="../Product/ProductDetail.html" class="btn btn-primary">Chi tiết sản phẩm</a>
-                        </div>
+            <a href="../Product/ProductDetail.html"><img src="../Image/Banner/5.png" alt=""></a>
+        </div>
+    </div> 
+    <div class="container text-center p-2">
+        <div class="col p-2">
+            <div class="row">
+                <div class="card m-2" style="width: 18rem;" ng-repeat="product in products">
+                    <!-- Lỗi ở đây -->
+                    <img src="{{product.urlImage}}" class="card-img-top m-1 rounded border border-danger" width="200px"
+                        height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title fs-6"> {{product.name}}</h5>
+                        <p class="card-text">
+                            Mô tả sản phẩm
+                        </p>
+                        <p class="text-danger fw-bold"> {{product.price}} $</p>
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="my-5 pt-5 text-body-secondary text-center text-small">
-        <p class="mb-1">&copy;2024 HungLVPH45911</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Privacy</a></li>
-            <li class="list-inline-item"><a href="#">Terms</a></li>
-            <li class="list-inline-item"><a href="#">Support</a></li>
-        </ul>
-    </footer>
-    <script src="../../JS/App.js"> </script>
-</body>
-
-</html>
+</div>

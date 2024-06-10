@@ -1,1 +1,51 @@
-<h1>Chỉnh sửa sản phẩm</h1>
+<div class="container">
+    <h1>Sửa sản phẩm
+    </h1>
+    <form class="container">
+        <span>Tên</span>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" aria-label="Text input with checkbox" ng-model="obj.name">
+        </div>
+    
+        <span>Url Image</span>
+        <div class="input-group mb-3">
+    
+            <input type="text" class="form-control" aria-label="Text input with checkbox" ng-model="obj.urlImage">
+        </div>
+        <span>Giá</span>
+        <div class="input-group mb-3">
+    
+            <input type="number" class="form-control" aria-label="Text input with checkbox" ng-model="obj.price">
+        </div>
+        <span>Số lượng</span>
+        <div class="input-group mb-3">
+    
+            <input type="number" class="form-control" aria-label="Text input with checkbox" ng-model="obj.quantity">
+        </div>
+        <span>Danh mục</span>
+        <!--  -->
+        <div>
+            <select class="form-select" ng-options="x.name for x in categories"  ng-model="obj.category">
+               
+            </select>
+    
+        </div>
+        <span>
+            Mô tả sản phẩm.
+        </span>
+        <div class="form-floating">
+            <textarea class="form-control" ng-model="obj.description" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+        </div>
+        <span>
+            Độ dài(M)
+        </span>
+        <div class="input-group mb-3">
+    
+            <input type="number" class="form-control" aria-label="Text input with checkbox" ng-model="obj.length">
+        </div>
+        <input class="m-5" type="submit" value="Sửa sản phẩm" ng-click="updateProduct()">
+    
+    </form>
+</div>

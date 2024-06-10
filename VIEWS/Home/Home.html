@@ -34,11 +34,11 @@
             </div>
         </div>
         <div class="item item2">
-            <a href="../Product/ProductDetail.html"><img src="../Image/Banner/4.jpeg" alt=""></a>
+            <a href="Product/ProductDetail.html"><img src="../Image/Banner/4.jpeg" alt=""></a>
         </div>
         <div class="item item3">
 
-            <a href="../Product/ProductDetail.html"><img src="../Image/Banner/5.png" alt=""></a>
+            <a href="Product/ProductDetail.html"><img src="../Image/Banner/5.png" alt=""></a>
         </div>
     </div> 
     <div class="container text-center p-2">
@@ -46,7 +46,9 @@
             <div class="row">
                 <div class="card m-2" style="width: 18rem;" ng-repeat="product in products">
                     <!-- Lỗi ở đây -->
+                     <!-- Tạo NG-click khi ấn vào ảnh thì hiện chi tiết sản phẩm -->
                     <img src="{{product.urlImage}}" class="card-img-top m-1 rounded border border-danger" width="200px"
+        
                         height="200px">
                     <div class="card-body">
                         <h5 class="card-title fs-6"> {{product.name}}</h5>
@@ -54,10 +56,12 @@
                             Mô tả sản phẩm
                         </p>
                         <p class="text-danger fw-bold"> {{product.price}} $</p>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                        <a href="#!/payment/{{product.id}}" class="btn btn-primary">Bán ngay</a>
+                        <a href="#!/ProductDetail/{{product.id}}" class="btn btn-primary">Chi tiết</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>

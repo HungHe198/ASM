@@ -1,0 +1,20 @@
+
+
+<div class="container">
+    <table class="table table-hover">
+        <tr>
+            <th>Tên người dùng</th>
+            <th>Địa chỉ</th>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Tổng tiền</th>
+        </tr>
+        <tr ng-repeat = "bill in bills track by $index">
+            <td>{{bill.name}}</td>
+            <td>{{bill.address}}</td>
+            <td>{{bill.nameProduct}}</td>
+            <td>{{bill.totalQuantity}}</td>
+            <td>{{bill.TotalPrice}}</td>
+        </tr>
+    </table>
+</div>

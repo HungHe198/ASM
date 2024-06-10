@@ -40,6 +40,23 @@ app.config(function ($routeProvider) {
             templateUrl: "product/addCategory.html",
             controller: "AddCategoryCtrl"
         })
+        .when("/MCategory/update/:id",{
+            templateUrl: "product/updateCategory.html",
+            controller: "UCategoryCtrl"
+        })
+        .when("/ProductDetail/:id", {
+            templateUrl: "productDetail/productDetail.html",
+            controller: "PDCtrl"
+        })
+        .when("/payment/:id", {
+            templateUrl: "Checkout/checkout.html",
+            controller:"CheckCtrl"
+        })
+        .when("/bill",{
+            templateUrl: "bill/bill.html",
+            controller: "BillCtrl"
+        })
+
         .otherwise({
             redirectTo: "/",
         })

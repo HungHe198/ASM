@@ -11,14 +11,16 @@
             <th>Đơn giá</th>
             <th>Số lượng còn lại</th>
             <th>
-                Chức năng khác
+                Danh nục
             </th>
+            <th></th>
         </tr>
         <tr ng-repeat="product in products">
             <td>{{product.id}}</td>
             <td>{{product.name}}</td>
             <td>{{product.price}}</td>
             <td>{{product.quantity}}</td>
+            <td>{{product.category.name}}</td>
             <td>
                 <button type="button" class="btn btn-primary">
                     <a href="#!/Mproduct/update/{{product.id}}"> Sửa</a>

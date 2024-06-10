@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../CSS/Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../CSS/home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="d-flex">
+            <div class="col-md-6">
+                <div class="MainImg">
+                    <img class="col-md-6 p-2 rounded" ng-src="{{obj.urlImage}}" alt=""
+                        style="min-height: 500px; min-width: 500px; box-shadow: 2px 6px 10px;">
+                </div>
+
+                <div class="SupImg d-flex ">
+                    <img class="col-md-1 p-2"  alt="">
+                    <img class="col-md-1 p-2"  alt="">
+                    <img class="col-md-1 p-2"  alt="">
+                    <img class="col-md-1 p-2"  alt="">
+                    <img class="col-md-1 p-2"  alt="">
+                    <img class="col-md-1 p-2"  alt="">
+                    <img class="col-md-1 p-2"  alt="">
+                    <img class="col-md-1 p-2"  alt="">
+                    <img class="col-md-1 p-2"  alt="">
+                </div>
+            </div>
+            <div class="information">
+                <span class="fs-1 fw-bold"> {{obj.name}} </span>
+                <br>
+
+                <span class="card-text fw-bold text-danger">{{obj.price}}</span>
+                <br>
+                <div>
+                    <span>
+                        Số lượng còn lại
+                    </span>
+                    <span class="fw-bold" >{{obj.quantity}}</span>
+                </div>
+                <div class="p-2">
+                    <span>
+                        Độ dài: {{obj.length}}
+                        
+                    </span>
+
+
+                </div>
+                <div class="buttonBuy" style="position: relative;top: 11rem;">
+                    <button type="button" class="btn btn-outline-warning">
+                        <a href="#">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAc9JREFUSEvd1L1rFEEYBvDn2csRohYqQlIJQYS4W9hopf4Foo0oWihK9qtRELHQ1KYTQYvs3O6hhUWIVvofCDaCjbgbbbQTFZEoQgiSfWSVCyfe3c7FBMQp35l5f/P5EpvcuMn58R8BcZFp445LzxM3OFDlWzuiDQWkj4kXjP8GdFYfL6Y3IF4X1DZu4A+zqyjPrpGYFXTfuMHZnoD/Kp0cKfkG0rfSLXe2GH23ReIifQLwCIAzievP9wSqYJynz0AeLIVTLc9/YAOE78wWLjW+AnA0urqjtSf60heI8vZFUrclPDaef9wGiBfbJyA9hPA08fzDnTk9/8H5t3e3jy6vfqoGrYw1dt2bvLBUh0RFmhGcLqWZlhfMDgSqzijPHpE4Vpe4u1+AHIf75qamX9cCYZ6ddIgFW0DSBxAzxg3a3XP6lopQpukUzmeQ2+ho/9xU8MIWswJ+HVNqSIaAFprN5XN39l5aGRYZWOzCl2Y32ShIbLVJnLj+H/lqq2lYZEcd6CqEQyBHBkHrAmxWPmhM7Q5+/uwiuwzoCsCbievfWqtbfeLWl9wZGOXpe5Lj1VM0XjBRF18PUL2m05LmjRdEXUDP+NDA39yD1R3808AP+TiwGTpnM6UAAAAASUVORK5CYII=" />
+                            <span class="text-danger">Thêm vào giỏ hàng</span>
+                        </a>
+                    </button>
+                    <button type="button" class="btn btn-warning">
+                        <a href="">Mua ngay Cho cái sự kiện mua vào</a>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="description p-3 rounded bg-dark-subtle">
+            <div class="ChiTietSanPham">
+                <h1 class="text-danger">
+                    <i class='bx bxs-book-content' style='color:#ff0000'>Mô tả sản phẩm</i>
+                </h1>
+                <div class="p-4">
+                    <p class="fw-bold">Danh mục:</p>
+
+                    <p class="p-3"> {{obj.category.name}}</p>
+
+                    <p class="fw-bold">Thương hiệu:</p>
+
+                    <p class="p-3">{{obj.category.name}}</p>
+                    <p class="fw-bold"> Đặc tả</p>
+                    <p class="p-3">
+                        {{obj.description}}
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
